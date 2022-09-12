@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article>
+        <h1>Bem-vinda meu amor</h1>
+        <div>
+            <p>Isso é uma pequena demonstração do que sinto. Tudo que esta na internet, está eternizado de alguma maneira. Quero que esse site, se torne um album, um diário, um arquivo da gente e do que sentimos. </p>
+            <p>
+                Sempre que quisermos renovar ou resgatar quero que a gente venha aqui e possa eu e você juntas, olhar pra gente e saber que temos uma a outra.
+            </p>
+            <img src="anaerafa.jpg" alt="">
+            <p>
+                Tenho orgulho enorme de ter ao meu lado uma linda e especial princesa, que admiro, me inspiro e me espelho.
+                Que nós sempre tenhamos amor, carinho, respeito e cumplicidade para fazer feliz e completa nossa união.
+            </p>
+        </div>
+    </article>
+    <div class="form">
+        <form action="cadastro.php">
+            <p id="qts">Quero muuuuito ser muito mais feliz com você. Aceitar ir nessa comigo?</p>
+            <label name="pedido" for="sim">Sim</label>
+            <input class="inp" type="radio" name="pedido" id="sim">
+            <label name="pedido" for="nao ">Não</label>
+            <input class="inp" type="radio" name="pedido" id="nao"> <br>
+            <img id="ft" src="empecert.jpg" alt="">
+
+            <input id="btn" type="button" value="Aceitar" onclick="aceitar()">
+        </form>
+        <p id="res"></p>
+      
+
+    </div>
+    <footer>
+        Desenvolvido com amor por Aninha. 
+    </footer>
+    <script>
+        var pedido = document.getElementsByName('pedido')[0]
+        var res = document.getElementById('res')
+        function aceitar(){
+            if(pedido == 0){
+                res.innerHTML = ('EU TE AMO!!')
+
+            } else{
+                res.innerHTML = ('EU TE AMO!!')
+            }
+
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>
